@@ -1,0 +1,54 @@
+/* -- Colors & Fonts -- 
+#9ABCA7; // Button Color
+#D28994; // Highlights
+#B9DAE6; // Logo Color / Button Color
+#41464F; // Darkest
+#707071; // Mid
+#D1D1D1; // Light
+#DBDBDB; // Lightest
+
+// -------- Fonts and Sizes
+// -------- Logotype: Exo 2
+// -------- Body Fonttype: Roboto
+// -------- Main headline - 60px
+// -------- Regular Headline - 32px;
+// -------- Body 21px;
+*/
+
+// font imports
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Roboto&display=swap');
+
+// variables
+@logoFont: 'Exo 2', sans-serif;
+@bodyFont: 'Roboto', sans-serif;
+@btnColor: #9abca7;
+@highlight: #d28994;
+@lcolor: #b9dae6;
+@dgray: #41464f;
+@mgray: #707071;
+@lgray: #d1d1d1;
+@xlgray: #dbdbdb;
+@white: #ffffff;
+
+// mixins
+
+// globals
+html,
+body {
+  font-family: @bodyFont;
+  font-size: 62.5%;
+  background: rgb(185, 218, 230);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(185, 218, 230, 1) 100%
+  );
+}
+
+/* Container */
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
