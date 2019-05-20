@@ -48,7 +48,7 @@ img {
   text-align: center;
   padding: 3rem;
 }
-@media (max-width: 640px) {
+@media (max-width: 960px), (max-width: 640px) {
   .container .header {
     flex-direction: column;
     align-items: center;
@@ -59,7 +59,7 @@ img {
 .container .header .logo-img {
   width: 30%;
 }
-@media (max-width: 640px) {
+@media (max-width: 960px), (max-width: 640px) {
   .container .header .logo-img {
     width: 100%;
   }
@@ -72,7 +72,7 @@ img {
   align-items: center;
   text-transform: uppercase;
 }
-@media (max-width: 640px) {
+@media (max-width: 960px), (max-width: 640px) {
   .container .header .nav {
     padding: 0;
     text-align: center;
@@ -85,7 +85,7 @@ img {
   justify-content: center;
   color: #41464f;
 }
-@media (max-width: 640px) {
+@media (max-width: 960px), (max-width: 640px) {
   .container .header .nav a {
     padding: 1rem;
   }
@@ -100,20 +100,21 @@ img {
 }
 .container .cta .lead-content {
   width: 85%;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
-@media (max-width: 640px) {
+@media (max-width: 960px), (max-width: 640px) {
   .container .cta .lead-content {
     width: 100%;
   }
 }
 .container .cta .lead-content h1 {
   padding: 1rem;
+  margin-bottom: 2rem;
   background: #41464f;
   color: #ffffff;
   border-radius: 5px;
 }
-@media (max-width: 640px) {
+@media (max-width: 960px), (max-width: 640px) {
   .container .cta {
     width: 100%;
     height: auto;
@@ -123,13 +124,19 @@ img {
 }
 .container .cta .lead {
   border-top: 1px solid #d1d1d1;
-  line-height: 3.5rem;
+  line-height: 4.5rem;
+}
+@media (max-width: 960px), (max-width: 640px) {
+  .container .cta .lead {
+    line-height: 3rem;
+    text-align: left;
+  }
 }
 .container .cta .cta-left {
   width: 45%;
   padding-left: 150px;
 }
-@media (max-width: 640px) {
+@media (max-width: 960px), (max-width: 640px) {
   .container .cta .cta-left {
     padding-left: 0;
     width: 100%;
@@ -144,7 +151,7 @@ img {
 .container .cta .cta-right h1 {
   padding-bottom: 15px;
 }
-@media (max-width: 640px) {
+@media (max-width: 960px), (max-width: 640px) {
   .container .cta .cta-right {
     width: 100%;
     text-align: center;
@@ -167,6 +174,7 @@ img {
   background: #ffffff;
 }
 .container .footer {
+  font-size: 1rem;
   height: 25rem;
   padding: 5rem 15rem;
   text-align: center;
