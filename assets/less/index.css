@@ -133,6 +133,7 @@ img {
   }
 }
 .container .cta .cta-left {
+  flex-grow: 1;
   width: 45%;
   padding-left: 150px;
 }
@@ -144,9 +145,9 @@ img {
   }
 }
 .container .cta .cta-right {
-  padding-right: 150px;
+  padding-right: 50px;
   width: 45%;
-  text-align: right;
+  text-align: center;
 }
 .container .cta .cta-right h1 {
   padding-bottom: 15px;
