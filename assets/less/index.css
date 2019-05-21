@@ -38,13 +38,24 @@ li {
   margin-left: 3rem;
   list-style-type: square;
   line-height: 4rem;
+  padding-bottom: 1rem;
 }
 @media (max-width: 960px), (max-width: 640px) {
   li {
-    padding: 1rem;
+    padding: 0.5rem;
     margin: 0 auto;
     text-align: center;
+    line-height: 2.5rem;
   }
+}
+hr {
+  border: 0;
+  margin-top: 1rem;
+  height: 1px;
+  background: #9abca7;
+  width: 75%;
+  background-image: linear-gradient(to right, #dbdbdb, #9abca7, #dbdbdb);
+  color: #9abca7;
 }
 /* Container */
 .container {
@@ -152,7 +163,7 @@ li {
   display: block;
 }
 .container .cta .lead {
-  border-top: 1px solid #d1d1d1;
+  border-top: 1px solid #9abca7;
   padding-top: 2rem;
   margin-bottom: 3rem;
   line-height: 4.5rem;
