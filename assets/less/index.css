@@ -101,6 +101,14 @@ img {
   font-weight: 900;
   margin-bottom: 3rem;
 }
+@media (max-width: 960px), (max-width: 640px) {
+  .container .cta {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+}
 .container .cta .article-title {
   width: 100%;
   display: flex;
@@ -122,16 +130,8 @@ img {
   border-radius: 5px;
   cursor: pointer;
 }
-.container .cta .article-title .fas {
-  text-align: right;
-}
-@media (max-width: 960px), (max-width: 640px) {
-  .container .cta {
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    padding: 0.5rem;
-  }
+.container .cta .article-content {
+  display: none;
 }
 .container .cta .show {
   display: block;

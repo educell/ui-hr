@@ -118,11 +118,16 @@ img {
     font-size: 2.2rem;
     font-weight: 900;
     margin-bottom: 3rem;
+    @media @tablet, @mobile {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      padding: 0.5rem;
+    }
     .article-title {
       width: 100%;
       display: flex;
       margin-bottom: 3rem;
-
       @media @tablet, @mobile {
         flex-direction: column;
       }
@@ -137,15 +142,9 @@ img {
         border-radius: 5px;
         cursor: pointer;
       }
-      .fas {
-        text-align: right;
-      }
     }
-    @media @tablet, @mobile {
-      width: 100%;
-      height: auto;
-      flex-direction: column;
-      padding: 0.5rem;
+    .article-content {
+      display: none;
     }
     .show {
       display: block;

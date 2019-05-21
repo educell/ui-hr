@@ -2,23 +2,23 @@ console.log(`index.js linked`);
 class Article {
   constructor(article) {
     this.article = article;
-    this.data = this.article.dataset.article;
-    this.articleElement = document.querySelector(
-      `.show-more[data-article="${this.data}"]`
-    );
-    this.article.addEventListener('click', () => this.showArticle());
+    this.toggleBtn = article.querySelector('.show-more');
+    this.icon = article.querySelector('.fas');
+    this.articleContent = article.querySelector('.article-content');
+    this.toggleBtn.addEventListener('click', () => this.showArticle());
   }
 
   showArticle() {
-    const indArticle = document.querySelectorAll('.article-content');
-    Array.from(indArticle).forEach(el => {
-      el.classList.remove('show');
-    });
-    console.log(`clicked`);
+    this.articleContent.classList.toggle('show');
+    if (this.icon.classList.contains('fa-chevron-down')) {
+      this.icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+    } else {
+      this.icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+    }
   }
 }
 
-const articles = document.querySelectorAll('.article-content');
+const articles = document.querySelectorAll('.article');
 
 articles.forEach(article => {
   new Article(article);
