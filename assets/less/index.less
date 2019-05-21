@@ -85,6 +85,24 @@ hr {
   color: @btnColor;
 }
 
+@keyframes btnTrans {
+  0% {
+    box-shadow: 3px 3px rgba(185, 218, 230, 0);
+  }
+  25% {
+    box-shadow: 3px 3px rgba(185, 218, 230, 0.2);
+  }
+  50% {
+    box-shadow: 3px 3px rgba(185, 218, 230, 0.4);
+  }
+  75% {
+    box-shadow: 3px 3px rgba(185, 218, 230, 0.6);
+  }
+  100% {
+    box-shadow: 3px 3px rgba(185, 218, 230, 0.8);
+  }
+}
+
 /* Container */
 .container {
   width: 100%;
@@ -232,9 +250,12 @@ hr {
         width: 150px;
         margin: 2rem;
         color: black;
+
         &:hover {
           background: @white;
           border: 5px solid @lcolor;
+          animation: btnTrans forwards;
+          animation-duration: 150ms;
         }
       }
     }
