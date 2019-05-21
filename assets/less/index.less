@@ -98,6 +98,19 @@ hr {
   animation: fadeIn 1500ms forwards;
 }
 
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  animation: fadeOut 1500ms forwards;
+}
+
 @keyframes btnTrans {
   0% {
     box-shadow: 3px 3px rgba(185, 218, 230, 0);
@@ -274,6 +287,19 @@ hr {
       }
     }
   }
+  .about {
+    display: flex;
+    height: 100vh;
+    .about-info {
+      padding-top: 3rem;
+      text-align: center;
+      flex-grow: 1;
+      h1 {
+        font-size: 6rem;
+      }
+    }
+  }
+
   /* end cta styles */
 
   /* footer styles */

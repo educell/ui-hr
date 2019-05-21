@@ -1,4 +1,3 @@
-console.log(`index.js linked`);
 class Article {
   constructor(article) {
     this.article = article;
