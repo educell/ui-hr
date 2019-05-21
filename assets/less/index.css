@@ -34,6 +34,18 @@ img {
 .emphasis {
   text-shadow: 3px 2px #d1d1d1;
 }
+li {
+  margin-left: 3rem;
+  list-style-type: square;
+  line-height: 4rem;
+}
+@media (max-width: 960px), (max-width: 640px) {
+  li {
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
 /* Container */
 .container {
   width: 100%;
