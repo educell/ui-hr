@@ -54,6 +54,10 @@ img {
   height: auto;
 }
 
+.article-show {
+  display: block;
+}
+
 /* Container */
 .container {
   width: 100%;
@@ -109,19 +113,21 @@ img {
   /* cta styles */
   .cta {
     display: flex;
-    // background-image: url('../img/chairs.png');
-    // opacity: 0.3;
-    // background-size: cover;
     justify-content: center;
     padding-top: 5rem;
     font-size: 2.2rem;
     font-weight: 900;
     margin-bottom: 3rem;
-    .lead-content {
-      width: 85%;
+    .article-title {
+      width: 100%;
+      display: flex;
       margin-bottom: 3rem;
+
       @media @tablet, @mobile {
-        width: 100%;
+        flex-direction: column;
+      }
+      i {
+        color: @highlight;
       }
       h1 {
         padding: 1rem;
@@ -129,6 +135,10 @@ img {
         background: @dgray;
         color: @white;
         border-radius: 5px;
+        cursor: pointer;
+      }
+      .fas {
+        text-align: right;
       }
     }
     @media @tablet, @mobile {
@@ -137,8 +147,12 @@ img {
       flex-direction: column;
       padding: 0.5rem;
     }
+    .show {
+      display: block;
+    }
     .lead {
       border-top: 1px solid @lgray;
+      margin-bottom: 3rem;
       line-height: 4.5rem;
       font-size: 2.1rem;
       font-weight: 300;
