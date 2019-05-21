@@ -85,21 +85,37 @@ hr {
   color: @btnColor;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 1500ms forwards;
+}
+
 @keyframes btnTrans {
   0% {
     box-shadow: 3px 3px rgba(185, 218, 230, 0);
   }
-  25% {
+  20% {
     box-shadow: 3px 3px rgba(185, 218, 230, 0.2);
   }
-  50% {
+  40% {
     box-shadow: 3px 3px rgba(185, 218, 230, 0.4);
   }
-  75% {
+  60% {
     box-shadow: 3px 3px rgba(185, 218, 230, 0.6);
   }
-  100% {
+  80% {
     box-shadow: 3px 3px rgba(185, 218, 230, 0.8);
+  }
+  100% {
+    box-shadow: 3px 3px rgba(185, 218, 230, 1);
   }
 }
 
@@ -254,8 +270,6 @@ hr {
         &:hover {
           background: @white;
           border: 5px solid @lcolor;
-          animation: btnTrans forwards;
-          animation-duration: 150ms;
         }
       }
     }

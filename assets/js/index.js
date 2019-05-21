@@ -10,6 +10,7 @@ class Article {
 
   showArticle() {
     this.articleContent.classList.toggle('show');
+    this.articleContent.classList.add('fadeIn');
     if (this.icon.classList.contains('fa-chevron-down')) {
       this.icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
     } else {
