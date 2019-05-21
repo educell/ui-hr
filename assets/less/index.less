@@ -23,7 +23,7 @@
 @bodyFont: 'Roboto', sans-serif;
 @btnColor: #9abca7;
 @highlight: #d28994;
-@lcolor: #b9dae6;
+@lcolor: rgba(185, 218, 230, 1);
 @dgray: #41464f;
 @mgray: #707071;
 @lgray: #d1d1d1;
@@ -56,6 +56,10 @@ img {
 
 .article-show {
   display: block;
+}
+
+.emphasis {
+  text-shadow: 3px 2px @lgray;
 }
 
 /* Container */
@@ -207,6 +211,7 @@ img {
         color: black;
         &:hover {
           background: @white;
+          border: 5px solid @lcolor;
         }
       }
     }

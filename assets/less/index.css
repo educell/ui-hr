@@ -31,6 +31,9 @@ img {
 .article-show {
   display: block;
 }
+.emphasis {
+  text-shadow: 3px 2px #d1d1d1;
+}
 /* Container */
 .container {
   width: 100%;
@@ -204,6 +207,7 @@ img {
 }
 .container .cta .cta-right .btn:hover {
   background: #ffffff;
+  border: 5px solid #b9dae6;
 }
 .container .footer {
   font-size: 1rem;
