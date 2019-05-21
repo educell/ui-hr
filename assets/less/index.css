@@ -138,6 +138,7 @@ img {
 }
 .container .cta .lead {
   border-top: 1px solid #d1d1d1;
+  padding-top: 2rem;
   margin-bottom: 3rem;
   line-height: 4.5rem;
   font-size: 2.1rem;
@@ -145,6 +146,18 @@ img {
 }
 @media (max-width: 960px), (max-width: 640px) {
   .container .cta .lead {
+    line-height: 3rem;
+    text-align: left;
+  }
+}
+.container .cta .lead2 {
+  margin-bottom: 3rem;
+  line-height: 4.5rem;
+  font-size: 2.1rem;
+  font-weight: 300;
+}
+@media (max-width: 960px), (max-width: 640px) {
+  .container .cta .lead2 {
     line-height: 3rem;
     text-align: left;
   }
