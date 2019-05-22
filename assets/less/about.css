@@ -188,6 +188,15 @@ hr {
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
 }
+.container .slide:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(170deg, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.8) 50%, #000000 100%);
+}
 .container .current {
   opacity: 1;
 }
@@ -200,6 +209,7 @@ hr {
   background: rgba(255, 255, 255, 0.8);
   padding: 35px;
   font-size: 3rem;
+  z-index: 1;
 }
 @media (max-width: 960px), (max-width: 640px) {
   .container .slide .content {
