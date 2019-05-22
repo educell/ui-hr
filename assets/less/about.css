@@ -252,19 +252,22 @@ hr {
   color: #41464f;
 }
 .container .slide:first-child {
-  background: url('https://i.imgur.com/aaj2I2o.jpg') no-repeat center center / cover;
+  background: url('https://hunterraffety.io/assets/img/1.jpg') no-repeat center center / cover;
 }
 .container .slide:nth-child(2) {
-  background: url('https://i.imgur.com/aaj2I2o.jpg') no-repeat center center / cover;
+  background: url('https://hunterraffety.io/assets/img/2.jpg') no-repeat center center / cover;
 }
 .container .slide:nth-child(3) {
-  background: url('https://i.imgur.com/aaj2I2o.jpg') no-repeat center center / cover;
+  background: url('https://hunterraffety.io/assets/img/3.jpg') no-repeat center center / cover;
 }
 .container .slide:nth-child(4) {
-  background: url('https://i.imgur.com/aaj2I2o.jpg') no-repeat center center / cover;
+  background: url('https://hunterraffety.io/assets/img/4.jpg') no-repeat center center / cover;
 }
 .container .slide:nth-child(5) {
-  background: url('https://i.imgur.com/aaj2I2o.jpg') no-repeat center center / cover;
+  background: url('https://hunterraffety.io/assets/img/5.jpg') no-repeat center center / cover;
+}
+.container .slide:nth-child(6) {
+  background: url('https://hunterraffety.io/assets/img/6.jpg') no-repeat center center / cover;
 }
 .container .footer {
   font-size: 1rem;
