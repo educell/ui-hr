@@ -24,12 +24,16 @@ body {
 }
 a {
   text-decoration: none;
+  color: #41464f;
 }
 img {
   height: auto;
 }
 .article-show {
   display: block;
+}
+.social {
+  padding-top: 1rem;
 }
 .emphasis {
   text-shadow: 3px 2px #d1d1d1;
