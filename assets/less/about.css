@@ -237,7 +237,7 @@ hr {
 }
 @media (max-width: 960px), (max-width: 640px) {
   .container .buttons button#next {
-    top: 100%;
+    top: 90%;
     right: 15px;
   }
 }
@@ -248,7 +248,7 @@ hr {
 }
 @media (max-width: 960px), (max-width: 640px) {
   .container .buttons button#prev {
-    top: 100%;
+    top: 90%;
     left: 15px;
   }
 }
