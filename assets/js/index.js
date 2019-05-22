@@ -1,25 +1,40 @@
-class Article {
-  constructor(article) {
-    this.article = article;
-    this.toggleBtn = article.querySelector('.show-more');
-    this.icon = article.querySelector('.fas');
-    this.articleContent = article.querySelector('.article-content');
-    this.toggleBtn.addEventListener('click', () => this.showArticle());
+class ArticleButton {
+  constructor(element) {
+    this.element = element;
+    this.data = this.element.dataset.article;
+    this.itemElement = document.querySelector(
+      `.article-content[data-article='${this.data}']`
+    );
+    console.log(`item element`, this.itemElement);
+    this.articleItem = new ArticleItem(this.itemElement);
+    console.log(`article item`, this.articleItem);
+    this.element.addEventListener('click', () => this.select());
   }
-
-  showArticle() {
-    this.articleContent.classList.toggle('show');
-    this.articleContent.classList.add('fadeIn');
-    if (this.icon.classList.contains('fa-chevron-down')) {
-      this.icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
-    } else {
-      this.icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
-    }
+  select() {
+    const articles = document.querySelectorAll('.article-content');
+    Array.from(articles).forEach(article => {
+      article.classList.remove('show');
+    });
+    this.element.classList.add('show');
+    this.articleItem.select();
   }
 }
 
-const articles = document.querySelectorAll('.article');
+class ArticleItem {
+  constructor(element) {
+    this.element = element;
+  }
+  select() {
+    const articles = document.querySelectorAll('.article-content');
+    Array.from(articles).forEach(article => {
+      article.classList.remove('show');
+    });
+    this.element.classList.add('show', 'fadeIn');
+  }
+}
+
+let articles = document.querySelectorAll('.article-title');
 
 articles.forEach(article => {
-  new Article(article);
+  new ArticleButton(article);
 });
