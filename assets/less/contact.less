@@ -215,10 +215,12 @@ hr {
     padding: 0;
   }
 
-  /* about styles */
-  .about {
+  /* contact styles */
+  .contact {
     display: flex;
-    .about-info {
+    flex-direction: column;
+    align-items: center;
+    .contact-info {
       padding: 1rem 0 3rem 0;
       text-align: center;
       flex-grow: 1;
@@ -226,140 +228,18 @@ hr {
         font-size: 6rem;
       }
     }
-  }
-  /* end about styles */
-
-  /* slider styles */
-  .slider {
-    position: relative;
-    overflow: hidden;
-    height: 70vh;
-    width: 100vw;
-    i {
-      color: @btnColor;
-      text-shadow: 1px 1px black;
-    }
-    h1 {
-      text-transform: uppercase;
-      font-weight: 900;
-    }
-    p {
-      color: @dgray;
+    .contact-form {
+      margin: 3.5rem 0 1rem 0;
+      text-align: center;
+      height: 50vh;
+      width: 50%;
+      @media @tablet, @mobile {
+        width: 85%;
+        margin: 1rem;
+      }
     }
   }
-  .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    &:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(
-        170deg,
-        rgba(0, 0, 0, 0) 25%,
-        rgba(0, 0, 0, 0.8) 50%,
-        rgba(0, 0, 0, 1) 100%
-      );
-    }
-  }
-  .current {
-    opacity: 1;
-  }
-
-  .slide .content {
-    position: absolute;
-    bottom: 10px;
-    left: -600px;
-    opacity: 0;
-    width: 600px;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 35px;
-    font-size: 3rem;
-    z-index: 1;
-    @media @tablet, @mobile {
-      padding: 1rem;
-      width: 30rem;
-      font-size: 1.5rem;
-    }
-  }
-
-  .slide .content h1 {
-    margin-bottom: 10px;
-  }
-
-  .slide.current .content {
-    opacity: 1;
-    transform: translateX(700px);
-    transition: all 0.7s ease-in-out 0.3s;
-  }
-
-  .buttons button#next {
-    position: absolute;
-    top: 62%;
-    right: 15px;
-    @media @tablet, @mobile {
-      top: 90%;
-      right: 15px;
-    }
-  }
-
-  .buttons button#prev {
-    position: absolute;
-    top: 62%;
-    left: 15px;
-    @media @tablet, @mobile {
-      top: 90%;
-      left: 15px;
-    }
-  }
-
-  .buttons button {
-    border: 2px solid @white;
-    background-color: transparent;
-    color: @white;
-    cursor: pointer;
-    padding: 13px 15px;
-    border-radius: 50%;
-    outline: none;
-  }
-
-  .buttons button:hover {
-    background-color: @white;
-    color: @dgray;
-  }
-
-  .slide:first-child {
-    background: url('https://hunterraffety.io/assets/img/1.jpg') no-repeat
-      center center/cover;
-  }
-  .slide:nth-child(2) {
-    background: url('https://hunterraffety.io/assets/img/2.jpg') no-repeat
-      center center/cover;
-  }
-  .slide:nth-child(3) {
-    background: url('https://hunterraffety.io/assets/img/3.jpg') no-repeat
-      center center/cover;
-  }
-  .slide:nth-child(4) {
-    background: url('https://hunterraffety.io/assets/img/4.jpg') no-repeat
-      center center/cover;
-  }
-  .slide:nth-child(5) {
-    background: url('https://hunterraffety.io/assets/img/5.jpg') no-repeat
-      center center/cover;
-  }
-  .slide:nth-child(6) {
-    background: url('https://hunterraffety.io/assets/img/6.jpg') no-repeat
-      center center/cover;
-  }
+  /* end contact styles */
 
   /* footer styles */
   .footer {
