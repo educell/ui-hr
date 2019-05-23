@@ -183,9 +183,8 @@ hr {
 /* Container */
 .container {
   width: 100%;
-  /* about styles */
-  /* end about styles */
-  /* slider styles */
+  /* contact styles */
+  /* end contact styles */
   /* footer styles */
   /* end footer styles */
 }
@@ -194,133 +193,30 @@ hr {
     padding: 0;
   }
 }
-.container .about {
+.container .contact {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.container .about .about-info {
-  padding: 1rem 0 1rem 0;
+.container .contact .contact-info {
+  padding: 1rem 0 3rem 0;
   text-align: center;
   flex-grow: 1;
 }
-.container .about .about-info h1 {
+.container .contact .contact-info h1 {
   font-size: 6rem;
 }
-.container .slider {
-  position: relative;
-  overflow: hidden;
-  height: 70vh;
-  width: 100vw;
-}
-.container .slider i {
-  color: #9abca7;
-  text-shadow: 1px 1px black;
-}
-.container .slider h1 {
-  text-transform: uppercase;
-  font-weight: 900;
-}
-.container .slider p {
-  color: #41464f;
-}
-.container .slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out;
-}
-.container .slide:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(170deg, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.8) 50%, #000000 100%);
-}
-.container .current {
-  opacity: 1;
-}
-.container .slide .content {
-  position: absolute;
-  bottom: 10px;
-  left: -600px;
-  opacity: 0;
-  width: 600px;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 35px;
-  font-size: 3rem;
-  z-index: 1;
+.container .contact .contact-form {
+  margin: 3.5rem 0 1rem 0;
+  text-align: center;
+  height: 50vh;
+  width: 50%;
 }
 @media (max-width: 960px), (max-width: 640px) {
-  .container .slide .content {
-    padding: 1rem;
-    width: 30rem;
-    font-size: 1.5rem;
+  .container .contact .contact-form {
+    width: 85%;
+    margin: 1rem;
   }
-}
-.container .slide .content h1 {
-  margin-bottom: 10px;
-}
-.container .slide.current .content {
-  opacity: 1;
-  transform: translateX(700px);
-  transition: all 0.7s ease-in-out 0.3s;
-}
-.container .buttons button#next {
-  position: absolute;
-  top: 62%;
-  right: 15px;
-}
-@media (max-width: 960px), (max-width: 640px) {
-  .container .buttons button#next {
-    top: 90%;
-    right: 15px;
-  }
-}
-.container .buttons button#prev {
-  position: absolute;
-  top: 62%;
-  left: 15px;
-}
-@media (max-width: 960px), (max-width: 640px) {
-  .container .buttons button#prev {
-    top: 90%;
-    left: 15px;
-  }
-}
-.container .buttons button {
-  border: 2px solid #ffffff;
-  background-color: transparent;
-  color: #ffffff;
-  cursor: pointer;
-  padding: 13px 15px;
-  border-radius: 50%;
-  outline: none;
-}
-.container .buttons button:hover {
-  background-color: #ffffff;
-  color: #41464f;
-}
-.container .slide:first-child {
-  background: url('https://hunterraffety.io/assets/img/1.jpg') no-repeat center center / cover;
-}
-.container .slide:nth-child(2) {
-  background: url('https://hunterraffety.io/assets/img/2.jpg') no-repeat center center / cover;
-}
-.container .slide:nth-child(3) {
-  background: url('https://hunterraffety.io/assets/img/3.jpg') no-repeat center center / cover;
-}
-.container .slide:nth-child(4) {
-  background: url('https://hunterraffety.io/assets/img/4.jpg') no-repeat center center / cover;
-}
-.container .slide:nth-child(5) {
-  background: url('https://hunterraffety.io/assets/img/5.jpg') no-repeat center center / cover;
-}
-.container .slide:nth-child(6) {
-  background: url('https://hunterraffety.io/assets/img/6.jpg') no-repeat center center / cover;
 }
 .container .footer {
   font-size: 1rem;

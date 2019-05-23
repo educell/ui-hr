@@ -65,6 +65,8 @@ img {
 
 .emphasis {
   text-shadow: 3px 2px @lgray;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 li {
@@ -217,7 +219,7 @@ hr {
   .about {
     display: flex;
     .about-info {
-      padding: 1rem 0 3rem 0;
+      padding: 1rem 0 1rem 0;
       text-align: center;
       flex-grow: 1;
       h1 {
@@ -233,6 +235,17 @@ hr {
     overflow: hidden;
     height: 70vh;
     width: 100vw;
+    i {
+      color: @btnColor;
+      text-shadow: 1px 1px black;
+    }
+    h1 {
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+    p {
+      color: @dgray;
+    }
   }
   .slide {
     position: absolute;
@@ -354,6 +367,9 @@ hr {
     height: 25rem;
     padding: 5rem 15rem;
     text-align: center;
+    .copyright {
+      padding-top: 2rem;
+    }
   }
   /* end footer styles */
 }
