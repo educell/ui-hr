@@ -1,3 +1,4 @@
+// accordion
 class Article {
   constructor(article) {
     this.article = article;
@@ -11,9 +12,9 @@ class Article {
     this.articleContent.classList.toggle('show');
     this.articleContent.classList.add('fadeIn');
     if (this.icon.classList.contains('fa-chevron-down')) {
-      this.icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+      this.icon.classList.replace('fa-chevron-down', 'fa-times-square');
     } else {
-      this.icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+      this.icon.classList.replace('fa-times-square', 'fa-chevron-down');
     }
   }
 }
@@ -24,11 +25,10 @@ articles.forEach(article => {
   new Article(article);
 });
 
+// cheeseburger menu
 const nav = document.querySelector('nav');
 const menu = document.querySelector('.menu-toggle');
-console.log(`object`, nav);
 menu.addEventListener('click', () => {
-  console.log(`object`, nav);
   nav.classList.toggle('fadeIn');
   nav.classList.toggle('active');
 });
