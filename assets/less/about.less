@@ -137,57 +137,81 @@ hr {
   }
 }
 
+.menu-toggle {
+  cursor: pointer;
+  display: none;
+  @media @mobile {
+    padding: 1.5rem 0 1rem 0;
+    display: block;
+  }
+  i {
+    color: @highlight;
+  }
+}
+.active {
+  display: block !important;
+}
+
+.inactive {
+  display: none;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  text-align: center;
+  padding: 3rem;
+  @media @tablet, @mobile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+  }
+  .logo-img {
+    width: 30%;
+    // padding: 3rem;
+    @media @tablet, @mobile {
+      width: 100%;
+    }
+  }
+  .nav {
+    display: flex;
+    width: 100%;
+    // padding: 3rem;
+    font-size: 2.2rem;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: uppercase;
+
+    @media @tablet {
+      padding: 0;
+      text-align: center;
+      font-size: 3rem;
+      flex-direction: column;
+      flex-wrap: wrap;
+      @media @mobile {
+        display: none;
+      }
+    }
+    a {
+      padding: 0.5rem 3rem;
+      justify-content: center;
+      color: @dgray;
+      @media @tablet, @mobile {
+        padding: 1rem;
+        width: 100%;
+      }
+    }
+  }
+}
+/* End header styles */
+
 /* Container */
 .container {
   width: 100%;
   @media @mobile {
     padding: 0;
   }
-
-  /* Header Styles */
-  .header {
-    display: flex;
-    text-align: center;
-    padding: 3rem 3rem 1rem 3rem;
-    @media @tablet, @mobile {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      justify-content: space-around;
-    }
-    .logo-img {
-      width: 30%;
-      // padding: 3rem;
-      @media @tablet, @mobile {
-        width: 100%;
-      }
-    }
-    .nav {
-      display: flex;
-      width: 100%;
-      // padding: 3rem;
-      font-size: 2.2rem;
-      justify-content: flex-end;
-      align-items: center;
-      text-transform: uppercase;
-
-      @media @tablet, @mobile {
-        padding: 0;
-        text-align: center;
-        font-size: 3rem;
-        flex-direction: column;
-      }
-      a {
-        padding: 0.5rem 3rem;
-        justify-content: center;
-        color: @dgray;
-        @media @tablet, @mobile {
-          padding: 1rem;
-        }
-      }
-    }
-  }
-  /* End header styles */
 
   /* about styles */
   .about {

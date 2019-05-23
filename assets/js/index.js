@@ -23,3 +23,12 @@ const articles = document.querySelectorAll('.article');
 articles.forEach(article => {
   new Article(article);
 });
+
+const nav = document.querySelector('nav');
+const menu = document.querySelector('.menu-toggle');
+console.log(`object`, nav);
+menu.addEventListener('click', () => {
+  console.log(`object`, nav);
+  nav.classList.toggle('fadeIn');
+  nav.classList.toggle('active');
+});
