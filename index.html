@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css'/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
@@ -33,11 +34,10 @@
         <nav class="nav">
           <a href="index.html" class="hvr-grow">Home</a>
           <a href="about.html" class="hvr-grow">About</a>
-          <a href="contact.html" class="hvr-grow">Contact</a>
+          <a href="#" class="hvr-grow" id="modal-btn">Contact</a>
         </nav>
       </header>
     <div class="container">
-
       <section class="cta">
         <div class="cta-left">
           <div class="article">
@@ -56,7 +56,7 @@
                 The purpose of Educell is to help facilitate students
                 to have access to as many routes as possible to allow for meaningful and successful outcomes. Educell provides a platform that focuses on
                 team communication and supports service providers in the
-                educational setting to increase student supports. By utilizing Educell, teams can help promote academic, social, and
+                educational setting to increase student engagement and success. By utilizing Educell, teams can help promote academic, social, and
                 emotional development and growth. With the help of Educell, there is nothing a student
                 can't achieve.
               </p>
@@ -118,7 +118,7 @@
             </div>
             <div class="article-content" data-article="3">
               <p class="lead">
-                At Educell, we believe that all successful student outcomes are determined by the participation and input from all vested team members which includes the students themselves. By facilitating communication as well as gathering comprehensive data metrics and documenting progress monitoring, teams will be able to assess whether or not a student is making progress toward desired outcomes. If a student is not making progress then the team can reconvene in a formal setting and determine new approaches in an effort to reinforce the desired outcomes. Educell empowers interested parties by allowing them to have a voice and to collaborate with others.
+                At Educell, we believe that all successful student outcomes are determined by the participation and input from all team members which includes the students themselves. By facilitating communication and gathering comprehensive data metrics and documenting progress monitoring, teams will be able to assess whether or not a student is making progress toward desired outcomes. If a student is not making progress then the team can reconvene in a formal setting and determine new approaches in an effort to reinforce the desired outcomes. Educell empowers interested parties by allowing them to have a voice and to collaborate with others.
               </p>
             </div>
           </div>
@@ -135,8 +135,29 @@
         </div>
       </footer>
     </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <i class="fal fa-window-close fa-5x close"></i>
+        <div class="modal-form">
+          <form class="pure-form pure-form-stacked">
+            <fieldset class="pure-group">
+              <label for="Name">Name:</label>
+                <input type="text" class="pure-input-1-2" placeholder="Name">
+                <label for="email">Email Address:</label>
+                <input type="email" class="pure-input-1-2" placeholder="Email">
+            </fieldset>
+              <fieldset class="pure-group">
+                <legend>Your comments</legend>
+                  <textarea class="pure-input-1" placeholder="Comments"></textarea>
+              </fieldset>
+            <button type="submit" class="pure-button pure-input-1 pure-button-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./assets/nav.js" async></script>
+    <script src="./assets/js/nav.js" async></script>
+    <script src="./assets/js/modal.js"></script>
     <script src="./assets/js/index.js" async></script>
   </body>
 </html>

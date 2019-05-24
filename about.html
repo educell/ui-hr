@@ -15,11 +15,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
     />
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css'/>
     <link
       rel="stylesheet/less"
       type="text/css"
       href="./assets/less/about.less"
     />
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
   </head>
   <body>
@@ -33,7 +35,7 @@
         <nav class="nav">
           <a href="index.html" class="hvr-grow">Home</a>
           <a href="about.html" class="hvr-grow">About</a>
-          <a href="contact.html" class="hvr-grow">Contact</a>
+          <a href="#" class="hvr-grow" id="modal-btn">Contact</a>
         </nav>
       </header>
     <div class="container">
@@ -120,7 +122,29 @@
         </div>
       </footer>
     </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <i class="fal fa-window-close fa-5x close"></i>
+        <div class="modal-form">
+          <form class="pure-form pure-form-stacked">
+            <fieldset class="pure-group">
+              <label for="Name">Name:</label>
+                <input type="text" class="pure-input-1-2" placeholder="Name">
+                <label for="email">Email Address:</label>
+                <input type="email" class="pure-input-1-2" placeholder="Email">
+            </fieldset>
+              <fieldset class="pure-group">
+                <legend>Your comments</legend>
+                  <textarea class="pure-input-1" placeholder="Comments"></textarea>
+              </fieldset>
+            <button type="submit" class="pure-button pure-input-1 pure-button-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/js/nav.js" async></script>
+    <script src="./assets/js/modal.js"></script>
     <script src="./assets/js/index.js" async></script>
     <script src="./assets/js/carousel.js" async></script>
   </body>
