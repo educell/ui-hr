@@ -1,7 +1,7 @@
 const modal = document.getElementById('modal');
 const btn = document.getElementById('modal-btn');
 const span = document.getElementsByClassName('close')[0];
-const form = document.querySelector('.btn');
+const form = document.querySelector('.click');
 
 btn.addEventListener('click', () => {
   modal.classList.add('show');

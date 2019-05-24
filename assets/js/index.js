@@ -32,7 +32,3 @@ menu.addEventListener('click', () => {
   nav.classList.toggle('fadeIn');
   nav.classList.toggle('active');
 });
-
-$(document).ready(function() {
-  console.log('ready!');
-});
