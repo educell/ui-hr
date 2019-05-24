@@ -1,7 +1,7 @@
 const modal = document.getElementById('modal');
 const btn = document.getElementById('modal-btn');
 const span = document.getElementsByClassName('close')[0];
-const form = document.querySelector('.pure-button-primary');
+const form = document.querySelector('.btn');
 
 btn.addEventListener('click', () => {
   modal.classList.add('show');
@@ -12,15 +12,8 @@ span.addEventListener('click', () => {
   modal.classList.remove('show');
 });
 
-// span.addEventListener('click', () => {
-//   modal.classList.add('fadeOut');
-//   setTimeout(disappear, 600);
-// });
-
 window.addEventListener('click', e => {
   if (e.target === modal) {
-    // modal.classList.add('fadeOut');
-    // setTimeout(disappear, 600);
     disappear();
   }
 });

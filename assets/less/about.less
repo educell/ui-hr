@@ -384,17 +384,18 @@ hr {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.3);
 }
-/* Modal Content/Box */
+
+/* Modal */
 .modal-content {
   display: flex;
   flex-wrap: wrap;
   background-color: @white;
-  margin: 10% auto; /* 15% from the top and centered */
+  margin: 10% auto;
   padding: 20px;
-  border: 3px solid @highlight;
+  border: 3px solid @lcolor;
   border-radius: 7px;
   max-width: 50%;
-  box-shadow: 1px 5px 5px @dgray;
+  box-shadow: 10px 3px 10px @dgray;
   display: flex;
   flex-direction: column;
   .modal-form {
@@ -406,7 +407,7 @@ hr {
 }
 
 .close {
-  color: @btnColor;
+  color: @highlight;
   font-size: 3rem;
   margin-bottom: 0.3rem;
 }
@@ -425,6 +426,23 @@ hr {
 .pure-group {
   width: 100%;
 }
+
 input[type='submit'] {
   width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  padding: 7px;
+  border: 5px solid @lcolor;
+  border-radius: 10px;
+  background: @lcolor;
+  color: black;
+  outline: none;
+
+  &:hover {
+    background: @white;
+    border: 5px solid @lcolor;
+  }
 }
